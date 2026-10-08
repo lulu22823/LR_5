@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task1">
+        <h1>Завдання 1. Температури</h1>
+        <div>
+            <label>Фаренгейт: <input type="number" id="fahrenheit" placeholder="Введіть число"></label>
+            <br><br>
+            <label>Цельсій: <input type="number" id="celsius" placeholder="Введіть число"></label>
+        </div>
+    </div>
+
+    <div class="task2">
+        <h1>Завдання 2. Таблиця множення (Ввід)</h1>
+        <p id="task2-score">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
+        <button id="task2-next">наступне завдання</button>
+        <br><br>
+        <div>
+            <span id="task2-question" style="font-size: 20px; font-weight: bold;"></span>
+            <input type="number" id="task2-answer" style="width: 60px; font-size: 18px;">
+            <button id="task2-check">перевірити</button>
+        </div>
+        <p id="task2-result" style="font-weight: bold;"></p>
+    </div>
+
+    <div class="task3">
+        <h1>Завдання 3. Таблиця множення (Вибір)</h1>
+        <p id="task3-score">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
+        <button id="task3-next">наступне завдання</button>
+        <br><br>
+        <span id="task3-question" style="font-size: 20px; font-weight: bold;"></span>
+        <div id="task3-options" style="margin-top: 10px;"></div>
+        <p id="task3-result" style="font-weight: bold;"></p>
+    </div>
+
+    <div class="task4">
+        <h1>Завдання 4. Ротатор фото (Фрукти)</h1>
+        <div id="rotator" class="rotator-container"></div>
+    </div>
+
+    <div class="task5">
+        <h1>Завдання 5. Captcha</h1>
+        <p>Введіть число</p>
+        <div id="captcha-display" class="captcha-display"></div>
+        <input type="text" id="captcha-input" placeholder="Код">
+        <button id="captcha-check">Перевірити</button>
+        <p id="captcha-result" style="font-weight: bold;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

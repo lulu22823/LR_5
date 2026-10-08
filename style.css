@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+div[class^="task"] {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #b45de6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #38d1c4;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Завдання 4: Ротатор */
+.rotator-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-top: 15px;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.rotator-nav {
+    text-decoration: none;
+    color: #b45de6;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.rotator-nav:hover {
+    color: #38d1c4;
+}
+
+.rotator-image {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.rotator-content {
+    text-align: center;
+}
+
+/* Завдання 5: Капча */
+.captcha-display {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.captcha-digit {
+    display: grid;
+    grid-template-columns: repeat(3, 15px);
+    grid-template-rows: repeat(5, 15px);
+    gap: 1px;
+    margin-right: 15px;
+}
+
+.captcha-pixel {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+}
+
+.captcha-pixel.active {
+    background-color: #ff3b30;
+}
